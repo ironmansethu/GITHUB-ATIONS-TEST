@@ -9,7 +9,7 @@ jobs:
       - name: List files
         run:
           pwd
-          1s -a
+          ls -a
           echo $GITHUB_SHA
           echo $GITHUB_REPOSITORY
           echo $GITHUB_WORKSPACE
