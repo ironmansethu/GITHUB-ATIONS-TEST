@@ -6,6 +6,16 @@ jobs:
   run-shell-command:
     runs-on: windows-latest
     steps:
+      - name: List files
+        run:
+          pwd
+          ls -a
+          echo $GITHUB_SHA
+          echo $GITHUB_REPOSITORY
+          echo $GITHUB_WORKSPACE
+          echo "${{ github.token}}"
+          # git clone git@hib:$GITHUB_REPOSITORY
+          # git checkout $GITHUB_SHA   
       - name: echo a string
         run: echo "Hello sethu"
       - name: multiline script
